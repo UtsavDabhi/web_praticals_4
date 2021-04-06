@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+p {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Name=Utsav Dabhi || ER=180020107008</h1>
+    <p id="demo"></p>
+<h3>Write javascript code that displays the text”AHMEDABAD INSTITUTE OF
+    TECHNOLOGY” with increasing font size in interval of 50ms in blue color.when font size
+    reaches to 50px it should stop.
+</h3>
+  
+<script>
+var var1 = setInterval(time, 1000);
+var fs = 5;
+var a = document.getElementById("demo");
+function time() {
+a.innerHTML = 'AHMEDABAD INSTITUTE OF TECHNOLOGY';
+a.setAttribute('style', "font-size: " + fs + "px; color: blue");
+fs += 5;
+if(fs >= 55 ){
+clearInterval(var1);
+}
+}
+ 
+</script>
+</body>
+</html>
